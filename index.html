@@ -4,23 +4,24 @@
 <head>
     <meta charset="utf-8"/>
     <title>NoteSpace</title>
-    <link rel="icon" href="Content/Logo/logoIcon.svg">
+    <link rel="icon" href="Content/Logo/1x/logoIcon.png">
     <meta name="description" content="NoteSpace to twoja plaforma do nauki. Znajdziesz tutaj mnóstwo notatek, filmów i wiele więcej, a to wszystko za darmo!"/>
     <meta name="keywords" contect="notatki, nauki, egzamin ósmoklasisty, filmy, matematyka, język polski, język angielski, 7 klasa, 8 klasa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 <body>
 
     <nav>
         <div class="navcontainer">
-            <a href="index.html"><img src="Content/Logo/logoFull.svg" alt="NoteSpace" height="50px"/></a>
+            <a href="index.html"><img src="Content/Logo/1x/logoFull.png" alt="NoteSpace" height="50px"/></a>
             <div class="menu">
                 <a href="index.html" class="is-active">Strona główna</a>
                 <a href="about.html">O nas</a>
                 <a href="contact.html">Kontakt</a>
-                <a href="app_main.html" class="stroke">Aplikacja ></a>
+                <a href="#" class="stroke">Aplikacja (wkrótce)</a>
             </div>
 
             <button class="menuHamburger">
@@ -28,14 +29,14 @@
                 <span></span>
                 <span></span>
             </button>
-    </div>
+        </div>
     </nav>
 
     <nav class = "mobile-nav">
         <a href="index.html" class="is-active">Strona główna</a>
         <a href="about.html">O nas</a>
         <a href="contact.html">Kontakt</a>
-        <a href="app_main.html">Aplikacja</a>
+        <a href="#">Aplikacja (wkrótce)</a>
     </nav>
     
     <div class="cookiespopup">
@@ -59,32 +60,350 @@
     </div>
 
 
-    <div class="container" style="position: relative;">
+    <div class="container" style="margin-top: 0;">
         <div id="homesvgdiv">
-        <svg id="homesvg"  viewBox="0 0 1920 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M-11 157.5C34.5 122.333 153.7 55.9 284.5 59.5C415.3 63.1 518.5 99.5 557 114C607 135 725.9 177.1 819.5 173.5C913.1 169.9 1116.17 96 1206 59.5C1245.83 44.1667 1348.5 14.4 1440.5 18C1532.5 21.6 1617.5 47.1667 1648.5 59.5C1713.5 85.3602 1876.3 158.9 1921.5 162.5" stroke="url(#paint0_linear_44_2)" stroke-width="35"/>
-            <defs>
-                <linearGradient id="paint0_linear_44_2" x1="-2.5" y1="17.7007" x2="1921.5" y2="17.7007" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FA3F03"/>
-                    <stop offset="1" stop-color="#0502BB"/>
-                </linearGradient>
-            </defs>
-        </svg>     
+            <svg id="homesvg"  viewBox="0 0 1920 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-11 157.5C34.5 122.333 153.7 55.9 284.5 59.5C415.3 63.1 518.5 99.5 557 114C607 135 725.9 177.1 819.5 173.5C913.1 169.9 1116.17 96 1206 59.5C1245.83 44.1667 1348.5 14.4 1440.5 18C1532.5 21.6 1617.5 47.1667 1648.5 59.5C1713.5 85.3602 1876.3 158.9 1921.5 162.5" stroke="url(#paint0_linear_44_2)" stroke-width="35"/>
+                <defs>
+                    <linearGradient id="paint0_linear_44_2" x1="-2.5" y1="17.7007" x2="1921.5" y2="17.7007" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FA3F03"/>
+                        <stop offset="1" stop-color="#0502BB"/>
+                    </linearGradient>
+                </defs>
+            </svg>     
         </div> 
-        <div id="hometitle">
-            <b>Twoja wiedza <br> jest tu.</b>
-        </div>
-        <div id="homeimage">
-            <img src="Content/Sites/Index/index_humans1.png" alt="" width="100%">
-        </div>
-        <div id="homescroll">
+        
+        <span id="homefull">
+            <div id="hometitle">
+                <b>Twoja wiedza <br> jest tu.</b>
+            </div>
+            <div id="homeimage">
+                <img src="Content/Sites/Index/index_humans1.png" alt="" width="100%">
+            </div>
+
+
+        </span>
+
+        <span id="homemobile">    
+            <div id="hometitlemobile">
+                <b>Twoja wiedza <br> jest tu.</b>
+            </div>
+            <div id="homeimagemobile">
+                <img src="Content/Sites/Index/index_humans1.png" alt="" width="100%">
+            </div>
+        </span>
+
+        <div class="scroll">
             <div class="scrollicon">
                 <span class="wheel"></span>
             </div>
         </div>
+        
+    </div>
+    
+
+    <div id="benefitscontainer">
+        <div id="benefitsheader">
+            <b>Dlaczego warto wybrać NoteSpace?</b>
+        </div>
+        <div id="benefitsdivider">
+            <img src="Content/Sites/Index/1x/notes.png" width="60%"> <br>
+            <b>Świetne notatki</b> <br> <br>
+            Na naszej platformie pod każdym tematem znajdziesz zbiór notatek z podsumowaniem najważniejszych informacji. Każdą z nich możesz pobrać i wydrukować!
+        </div>
+        <div id="benefitsdivider">
+            <img src="Content/Sites/Index/1x/video.png" width="60%"> <br>
+            <b>Materiały wideo</b> <br> <br>
+            Większość lekcji posiada swoje własne filmy w wysokiej jakości, dzięki którym lepiej zrozumiesz dane zagadnienie. 
+        </div>
+        <div id="benefitsdivider">
+            <img src="Content/Sites/Index/1x/test.png" width="60%"> <br>
+            <b>Testy sprawdzające</b> <br> <br>
+            Jeżeli nie jesteś pewnien, czy rozumiesz cały materiał, możesz zrobić test, który wskaże dokładnie gdzie popełniłeś błąd i wytłumaczy ci, jak go poprawić.
+        </div>
     </div>
 
-    <div id="footer">
+    <div id="benefitsmobilecontainer">
+        <div id="benefitsheader">
+            <b style="font-size: 8vw;">Dlaczego warto wybrać NoteSpace?</b> <br> <br>
+        </div>  <br> <br>
+        <div id="benefitsmobiledivider">
+            <img src="Content/Sites/Index/1x/notes.png" width="60%"> <br>
+            <b>Świetne notatki</b> <br> <br>
+            Na naszej platformie pod każdym tematem znajdziesz zbiór notatek z podsumowaniem najważniejszych informacji. Każdą z nich możesz pobrać i wydrukować!
+        </div>  <br> <br>
+        <div id="benefitsmobiledivider">
+            <img src="Content/Sites/Index/1x/video.png" width="60%"> <br>
+            <b>Materiały wideo</b> <br> <br>
+            Większość lekcji posiada swoje własne filmy w wysokiej jakości, dzięki którym lepiej zrozumiesz dane zagadnienie. 
+        </div>  <br> <br>
+        <div id="benefitsmobiledivider">
+            <img src="Content/Sites/Index/1x/test.png" width="60%"> <br>
+            <b>Testy sprawdzające</b> <br> <br>
+            Jeżeli nie jesteś pewnien, czy rozumiesz cały materiał, możesz zrobić test, który wskaże dokładnie gdzie popełniłeś błąd i wytłumaczy ci, jak go poprawić.
+        </div>
+    </div>
+
+    <div class="container" style="height: auto;">
+        <div id="reviewsheader">
+            <b>Ponad <span class="text-gradient">XX%</span> osób wybrało NoteSpace</b> <br>
+            Na podstawie ankiety z dni XX.XX - XX.XX.XXXX przeprowadzonej na XXX osobach.
+        </div>
+
+        <div id="reviewshower">
+            <div id="reviewtrackleft">
+                
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja1</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Świetna recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja2</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Wyśmietnita recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja3</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Niesamowita recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja4</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Super recenzja
+                    </div>
+                </div>     
+            
+    
+                    
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja1</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Świetna recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja2</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Wyśmietnita recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja3</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Niesamowita recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja4</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Super recenzja
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div id="reviewshower">
+            <div id="reviewtrackright">
+
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja5</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Fajna recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja6</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Mega recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja7</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Niekrytyczna recenzja
+                    </div>
+                </div>
+    
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja8</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Miła recenzja
+                    </div>
+                </div>
+            
+
+
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja5</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Fajna recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja6</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Mega recenzja
+                    </div>
+                </div>
+            
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja7</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Niekrytyczna recenzja
+                    </div>
+                </div>
+    
+                <div class="reviewwindow">
+                    <div class="reviewwindowheader">
+                        <b>Recenzja8</b>
+                    </div>
+                    <div class="reviewheaderimg">
+                        <img src="Content/Sites/Index/stars.png">
+                    </div>
+                    <div class="reviewwindowcontent">
+                        Miła recenzja
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" style="text-align: center; height: auto; margin-top: 12vh; margin-bottom: 12vh;">
+        <span id="appenterspan">
+        <b>Gotowy na <span class="text-gradient">naukę?</span></b> <br>
+        Startujemy już niedługo.
+        </span> 
+    </div>
+
+    <div id="container">
+        <div id="faqcontainer">
+            <div id="faqheader">
+                <div id="faqline">
+                    <span><b>FAQ</b></span>
+                </div>
+            </div>
+            <div id="faqquestionscontainer">
+                <div class="faqaccordion-item">
+                    <button id="faqaccordion-btn1" aria-expanded="false">
+                        <span class="faqaccordion-title"><b>Czy korzystanie z strony jest darmowe?</b></span>
+                    </button>
+                    <div class="faqaccordion-answer">
+                        Tak! Korzystanie ze strony jest w 100% darmowe. Obecnie na stronie nie ma żadnej subskrycji premium lub reklam.
+                    </div>
+                </div>
+                <div class="faqaccordion-item">
+                    <button id="faqaccordion-btn2" aria-expanded="false">
+                        <span class="faqaccordion-title"><b>Jakie materiały znajdę na stronie?</b></span>
+                    </button>
+                    <div class="faqaccordion-answer">
+                        Na początku znajdziesz materiały przygotowujące do egzaminu ósmoklasisty, poradniki np. jak radzić sobie ze stresem i kalkulatory punktów do szkoły średniej. W przyszłości planujemy dodać również materiały dla szkół ponadpodstawowych.
+                    </div>
+                </div>
+                <div class="faqaccordion-item">
+                    <button id="faqaccordion-btn3" aria-expanded="false">
+                        <span class="faqaccordion-title"><b>Znalazłem na stronie błąd, co mam zrobić?</b></span>
+                    </button>
+                    <div class="faqaccordion-answer">
+                        Przepraszamy za wszystkie błędy na naszej stronie, aczkolwiek jeżeli jakiś znalazłeś, miło nam będzie jak się z nami <a href="contact.html">skontaktujesz</a>!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
         <hr class="footer">
 
         <div class="footerdivider">
@@ -92,7 +411,7 @@
             <a href="index.html">Stona główna</a> <br>
             <a href="about.html">O nas</a> <br>
             <a href="contact.html">Kontakt</a> <br>
-            <a href="#">Aplikacja</a> <br>
+            <a href="#">Aplikacja (wkrótce)</a> <br>
         </div>
 
         <div class="footerdivider">
@@ -116,7 +435,7 @@
             </div>
         </div>
 
-        <div id="footerdividermobile">
+        <div class="footerdividermobile">
             
             <b>Menu</b> <br>
             <a href="index.html">Stona główna</a> <br>
